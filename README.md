@@ -4,12 +4,12 @@ This project is based on a [visual mockup](https://drive.google.com/file/d/0B-DG
 
 ### My Version
 * This is what the default page looks like. 
-	![Default]({{ site.baseurl }}/images/Default.png)
+	![Default](/images/Default.png)
 * This is what the default page looks like. 
-	![FilterDropdown]({{ site.baseurl }}/images/FilterDropdown.png)
+	![FilterDropdown](/images/FilterDropdown.png)
 * This is what the default page looks like. 
-	![FolderDropdown]({{ site.baseurl }}/images/FolderDropdown.png)
+	![FolderDropdown](/images/FolderDropdown.png)
 * This is what the default page looks like. 
-	![Pagination]({{ site.baseurl }}/images/Pagination.png)
+	![Pagination](/images/Pagination.png)
 * This is what the default page looks like. 
-	![SelectGrey]({{ site.baseurl }}/images/SelectGrey.png)
+	![SelectGrey](/images/SelectGrey.png)
