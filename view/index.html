@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.3/angular-route.min.js"></script>
+
+<!-- Controller -->
+<script src="/controller.js"></script> 
+
+<!-- Factories -->
+<script src="/factory.js"></script>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="/bootstrap.css">
+<link rel="stylesheet" href="/app.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
+<!-- Pagination -->
+<script src="dirPagination.js"></script>
+
+<head>
+	<title>RP Challenge</title>
+	<h2>Organize Your Emails</h2>
+</head>
+
+<body ng-app="myApp" ng-controller="MockDataCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="box">
+				<table class="table">
+
+					<!-- Search Bar Row -->
+
+					<tr class="table-search-row">
+						<td></td>
+						<td colspan="2">
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownSort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									{{ filterOption }}
+									<i class="pull-right fa fa-sort" aria-hidden="true" ></i>
+								</button>
+								<ul class="dropdown-menu scrollable-menu dropdown-sort" role="menu" aria-labelledby="dropdownSort">
+									<li ng-repeat="category in categories">
+										<a href="#" ng-click="setFilterDropdown(category)">{{category}}</a>
+									</li>
+								</ul>
+							</div>
+						</td>
+						<td colspan="2">
+							<input ng-model="search.sender" id="search" class="form-control" placeholder="Search for a sender...">
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+
+					<!-- Table Header Row -->
+
+					<tr class="table-header-row">
+						<th></th>
+						<th class="center">Organize</th>
+						<th style="padding-left: 2em;">Sender</th>
+						<th>Domain</th>
+						<th>Email</th>
+						<th>Folder</th>
+						<th></th>
+					</tr>
+
+					<!-- Email Rows -->
+
+					<tr dir-paginate="email in mockData | filter:search | itemsPerPage: pageSize" current-page="currentPage" class="email-row">
+						<td></td>
+						<td class="center">
+							<input id="{{ email.sender }}" type="checkbox" name="group" ng-model="selection[email.sender]" />
+							<label for="{{ email.sender }}"></label>
+						</td>
+						<td class="row-style" ng-class="{ 'row-selected-style': selection[email.sender]}">{{ email.sender }}</td>
+						<td class="row-style" ng-class="{ 'row-selected-style': selection[email.sender]}">{{ email.domain }}</td>
+						<td class="row-style" ng-class="{ 'row-selected-style': selection[email.sender]}">{{ email.email }}</td>
+						<td class="row-style" ng-class="{ 'row-selected-style': selection[email.sender]}">
+							<div class="dropdown">
+								<button ng-modal="email.sender" class="btn btn-default dropdown-toggle" type="button" id="dropdownCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<span >{{ email.folder }}</span>
+									<i class="pull-right fa fa-sort" aria-hidden="true" ></i>
+								</button>
+								<ul class="dropdown-menu scrollable-menu dropdown-category" role="menu" aria-labelledby="dropdownCategory">
+									<li ng-repeat="category in categories">
+										<a href="#" ng-click="setEmailFolder(email,category)">{{category}}</a>
+									</li>
+								</ul>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+				<div ng-controller="PaginationController" class="pagination-controller">
+					<div class="text-center">
+						<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="dirPagination.tpl.html"></dir-pagination-controls>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+

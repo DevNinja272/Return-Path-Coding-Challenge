@@ -1,0 +1,146 @@
+/*******************/
+/* Global Stylings */
+/*******************/
+
+table
+{
+	background-color: #F5F5F5;
+	margin-top: 0em !important;
+}
+
+h2
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+tr
+{
+	color: #797979;
+}
+
+/**************************/
+/* Generic Class Stylings */
+/**************************/
+
+.center
+{
+	text-align: center;
+} 
+
+/*********************/
+/* Checkbox Stylings */
+/*********************/
+
+input[type=checkbox] 
+{ 
+	display:none; 
+} 
+
+input[type=checkbox] + label:before 
+{
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before 
+{ 
+	content: "\f096"; 
+} 
+
+input[type=checkbox]:checked + label:before 
+{ 
+	content: "\f046"; 
+}
+
+/***********************/
+/* Search Row Styling */
+/**********************/
+
+.table-search-row
+{	
+	border: 1em solid;
+	border-color: #E5E5E5; 
+	background-color: #E5E5E5;
+}
+
+.table-search-row td
+{
+	padding: 0em !important;
+}
+
+#search
+{
+	width: 65%;
+}
+
+/**********************/
+/* Header Row Styling */
+/**********************/
+
+.table-header-row
+{
+	color: #797979;
+	background-color: #F5F5F5;
+}
+
+.table-header-row th
+{
+	padding-top: 2em !important;
+}
+
+/****************/
+/* Row Stylings */
+/****************/
+
+.email-row
+{
+	border: 1em solid;
+	border-color: #F5F5F5; 
+}
+
+.email-row > td
+{
+	vertical-align: middle !important;
+}
+
+.row-style
+{
+	background-color: white;
+}
+
+.row-selected-style
+{
+	background-color: #BEBDBD;
+}
+
+/**************************/
+/* Dropdown Menu Stylings */
+/**************************/
+
+#dropdownSort, 
+.dropdown-sort
+{
+	min-width: 10em;
+	width: 55%;
+	text-align: left;
+} 
+
+#dropdownCategory, 
+.dropdown-category
+{
+	min-width: 12em;
+	width: 100%;
+	text-align: left;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.fa.pull-right 
+{ 
+	line-height: inherit; 
+}
