@@ -50,3 +50,16 @@ This project is based on a [visual mockup](https://drive.google.com/file/d/0B-DG
 ### What else I would liked to have done?
 
 * I would have like to pulled all of the different folder categories from a JSON file, but I do not think I have time to do so. 
+
+* I read in the comments of GapJumpers that for the filter folders dropdown menu, there is no need to filter the rows that matches the folder category because it deals with server side. I would have liked to have done that because I think it would have made this project more complete, but I did not have time to adventure into that route, unfortunately.
+
+* I also would have liked to have gotten to sanitizing the external links to safe page and validations. I have never done anything like this before, so it would have been fun to implement this feature. Here is a list of links that I would've found helpful:
+	* [A Journey With Trusted HTML in AngularJS](http://odetocode.com/blogs/scott/archive/2014/09/10/a-journey-with-trusted-html-in-angularjs.aspx)
+	* [What is the purpose of angular-sanitize](http://stackoverflow.com/questions/33209938/what-is-the-purpose-of-angular-sanitize)
+	* [Angular's Documentation of $sanitize](https://docs.angularjs.org/api/ngSanitize/service/$sanitize)
+
+### Worth Noting:
+
+* To get the exact colors of the Visual Mock, I downloaded the image, opened it in paint, extracted the RBG color coordinates, and then input them into [RGB to Hex Color Converter](https://www.easycalculation.com/colorconverter/rgb-coder.php) to get the hexa value to match the color coding.
+
+* This repo, [angularUtils Pagination](https://github.com/michaelbromley/angularUtils/tree/master/src/directives/pagination), has the files that I have used for easy pagination. All credit goes to Michael Bromley.
