@@ -4,12 +4,12 @@ This project is based on a [visual mockup](https://drive.google.com/file/d/0B-DG
 
 ### My Version
 * This is what the default page looks like. 
-	![Default](images/Default.PNG)
+	![Default](images/Default.PNG =100x20)
 * This is what the default page looks like. 
-	![FilterDropdown](images/FilterDropdown.PNG)
+	![FilterDropdown](images/FilterDropdown.PNG =100x20)
 * This is what the default page looks like. 
-	![FolderDropdown](images/FolderDropdown.PNG)
+	![FolderDropdown](images/FolderDropdown.PNG =100x20)
 * This is what the default page looks like. 
-	![Pagination](images/Pagination.PNG)
+	![Pagination](images/Pagination.PNG =100x20)
 * This is what the default page looks like. 
-	![SelectGrey](images/SelectGrey.PNG)
+	![SelectGrey](images/SelectGrey.PNG =100x20)
