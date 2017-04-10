@@ -11,6 +11,10 @@ npm install
 npm start
 ```
 
+## Design 
+
+![UML Design](UML.PNG)
+
 ## My Version
 
 * #### Default Page
