@@ -1,6 +1,15 @@
 # Return Path Coding Challenge
 
-This project is based on a [visual mockup](https://drive.google.com/file/d/0B-DG9iFOyKT2ZnlhU2pPQ3lJU1E/view?usp=sharing) and a [crowd-sourced JSON file](https://drive.google.com/file/d/0B-DG9iFOyKT2SDlOaVR3U3Z6SjQ/view?usp=sharing) that can be used for testing.
+This project is based on a [visual mockup](https://drive.google.com/file/d/0B-DG9iFOyKT2ZnlhU2pPQ3lJU1E/view?usp=sharing) and a [crowd-sourced JSON file](https://drive.google.com/file/d/0B-DG9iFOyKT2SDlOaVR3U3Z6SjQ/view?usp=sharing) that can be used for testing. Brought to you by, GapJumpers, "Employers use our technology to find untapped talent using blind auditions". 
+
+To run this project, please do the following within the root directory:
+```
+npm install
+```
+
+```
+npm start
+```
 
 ## My Version
 
